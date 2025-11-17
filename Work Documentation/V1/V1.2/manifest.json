@@ -1,7 +1,7 @@
 {
     "name": "BrowseGuard V1",
     "description": "Protecting Online Users Through Ad Blocking",
-    "version": "1.1", 
+    "version": "1.2", 
     "manifest_version": 3, 
     "action": {
         "default_popup": "popup/popup.html", 
@@ -9,7 +9,9 @@
     },
 
     "permissions":[
-        "declarativeNetRequest"
+        "declarativeNetRequest",
+        "webRequest",
+        "tabs"
     ],
 
     "declarative_net_request": {
@@ -31,7 +33,7 @@
             }
         ]
     },
-    
+
     "background": {
         "service_worker": "background.js"
     } ,
