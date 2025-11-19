@@ -11,7 +11,8 @@
     "permissions":[
         "declarativeNetRequest",
         "webRequest",
-        "tabs"
+        "tabs",
+        "storage"
     ],
 
     "declarative_net_request": {
